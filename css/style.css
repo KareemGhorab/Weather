@@ -1,0 +1,90 @@
+:root{
+    --main-color: rgb(0,154,216);
+    --sec-color: rgb(38,41,54);
+}
+body{
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/* --------------------------------------------------------------------------- */
+.logo-container{
+    width: 60px;
+}
+.slogan-container span{
+    font-size: 10px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+    transition: color .2s, border .2s;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 2rem;
+    padding: 2px 25px;
+    font-size: 14px;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active{
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+/* --------------------------------------------------------------------------- */
+header{
+    background-image: url(../images/banner.png);
+    background-position: center center;
+    background-size: cover;
+}
+input{
+    caret-color: white;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+p, .btn{
+    font-size: 14px;
+}
+.card img{
+    width: 50px;
+}
+.card img.active{
+    width: 100px;
+}
+.temp, .temp-c{
+    font-size: 24px;
+    font-weight: 700;
+}
+.temp.active, .temp-c.active{
+    font-size: 90px;
+}
+/* --------------------------------------------------------------------------- */
+.icon-contianer{
+    width: 38px;
+    height: 38px;
+    transition: background-color .2s;
+}
+.icon-contianer:hover{
+    background-color: var(--main-color) !important;
+}
+.icon-contianer i{
+    transition: color .2s;
+}
+.icon-contianer:hover i{
+    color: white;
+}
+/* --------------------------------------------------------------------------- */
+.bg-main{
+    background-color: var(--main-color);
+}
+.bg-sec{
+    background-color: var(--sec-color);
+}
+.text-main{
+    color: var(--main-color);
+}
+.text-gold{
+    color: gold !important;
+}
+.fa-rotate-45{
+    transform: rotateZ(45deg);
+}

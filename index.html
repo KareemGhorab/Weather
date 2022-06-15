@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>Weather</title>
+</head>
+<body>
+  
+  
+  <nav class="navbar navbar-dark navbar-expand-lg bg-dark py-5 px-lg-5">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <div class="d-flex">
+          <div class="logo-container">
+            <img class="w-100"
+            src="images/logo.png" alt="weather cloud logo">
+          </div>
+          <div class="slogan-container ms-3">
+            <h1 class="h4 d-block fw-bold fs-6 m-0">Weather</h1>
+            <span class="d-block fw-light text-muted">tagline goes here</span>
+          </div>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item ms-2">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link" href="#">Live Camera</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link" href="#">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5">
+    <div class="d-flex justify-content-between bg-dark rounded-pill w-75 mx-auto mb-5">
+      <input class="w-100 py-3 px-4 border-0 bg-dark rounded-end rounded-pill text-white"
+      type="text" placeholder="Find your location..." id="location-btn">
+      <div class="btn-container w-auto p-1">
+        <button class="btn bg-main rounded-pill text-white px-5 h-100">Find</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row gx-0">
+        <div class="card col-lg-4 bg-sec text-white rounded-0">
+          <div class="card-header d-flex justify-content-between">
+            <span  class="day-name">Friday</span>
+            <span id="currentDayDate">10June</span>
+          </div>
+          <div class="card-body">
+            <h3 class="h5 m-0">Cairo</h3>
+            <span class="temp active">41</span>
+            <span class="temp-c active pe-4">&deg;C</span>
+            <img class="active" src="images/logo.png" alt="logo">
+            <span class="cond d-block text-main my-3">sunny</span>
+            <div class="d-flex">
+              <div class="me-3">
+                <i class="fa-solid fa-umbrella"></i>
+                <span>20%</span>
+              </div>
+              <div class="me-3">
+                <i class="fa-solid fa-wind"></i>
+                <span>18km/h</span>
+              </div>
+              <div class="me-3">
+                <i class="fa-solid fa-compass fa-rotate-45"></i>
+                <span>East</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card col-lg-4 bg-dark text-white rounded-0 text-center">
+          <div class="card-header">
+            <span class="day-name">Friday</span>
+          </div>
+          <div class="card-body py-5">
+            <img src="images/logo.png" alt="logo">
+            <div class="d-block mt-4">
+              <span class="temp">41</span>
+              <span class="temp-c">&deg;C</span>
+            </div>
+            <div class="d-block">
+              <span class="minTemp text-muted">29.9</span>
+              <span>&deg;C</span>
+            </div>
+            <span class="cond text-main my-3 d-block">sunny</span>
+          </div>
+        </div>
+        <div class="card col-lg-4 bg-dark text-white rounded-0 text-center">
+          <div class="card-header">
+            <span class="day-name">Friday</span>
+          </div>
+          <div class="card-body py-5">
+            <img src="images/logo.png" alt="logo">
+            <div class="d-block mt-4">
+              <span class="temp">41</span>
+              <span class="temp-c">&deg;C</span>
+            </div>
+            <div class="d-block">
+              <span class="minTemp text-muted">29.9</span>
+              <span>&deg;C</span>
+            </div>
+            <span class="cond text-main my-3 d-block">sunny</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <footer class="py-5 bg-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 p-0 d-flex justify-content-between bg-dark rounded-pill">
+          <input class="py-3 px-4 border-0 bg-dark w-100 rounded-end rounded-pill text-white"
+          type="text" placeholder="Enter your email to subscribe..." id="location-btn">
+          <div class="btn-container w-auto p-1">
+            <button class="btn bg-main rounded-pill text-white px-4 h-100">Subcribe</button>
+          </div>
+        </div>
+        <div class="col-lg-3 offset-lg-1 d-flex align-items-center justify-content-center mt-4 m-lg-0">
+          <a href="https://facebook.com" target="_blank"
+          class="icon-contianer bg-dark rounded-circle d-flex justify-content-center align-items-center me-1">
+            <i class="fa-brands fa-facebook-f text-main fa-lg"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank"
+          class="icon-contianer bg-dark rounded-circle d-flex justify-content-center align-items-center me-1">
+            <i class="fa-brands fa-twitter text-main fa-lg"></i>
+          </a>
+          <a href="https://google.com" target="_blank"
+          class="icon-contianer bg-dark rounded-circle d-flex justify-content-center align-items-center me-1">
+            <i class="fa-brands fa-google-plus-g text-main fa-lg"></i>
+          </a>
+          <a href="https://pinterest.com" target="_blank"
+          class="icon-contianer bg-dark rounded-circle d-flex justify-content-center align-items-center me-1">
+            <i class="fa-brands fa-pinterest text-main fa-lg"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <p class="text-muted text-center mx-auto w-auto">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
